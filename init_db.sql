@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS users (
+    pin INTEGER PRIMARY KEY,
+    balance REAL NOT NULL DEFAULT 0.0
+);
+
+INSERT OR IGNORE INTO users (pin, balance) VALUES
+    (1234, 1000.00),
+    (5678, 500.00);
